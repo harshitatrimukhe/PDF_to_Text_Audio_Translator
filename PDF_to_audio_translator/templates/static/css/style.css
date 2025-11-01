@@ -1,0 +1,110 @@
+/* 🌸 Modern Soft UI Style - clean and attractive */
+
+body {
+  background: linear-gradient(180deg, #fdfbff, #eef4ff, #ffffff);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #1f355b;
+  margin: 0;
+  padding: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Smooth fade for page sections */
+.card, section {
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar */
+.gradient-bg {
+  background: linear-gradient(90deg, #6a8cff, #4c69e6);
+  box-shadow: 0 4px 12px rgba(90, 120, 255, 0.25);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+/* Main Card */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 14px !important;
+  padding: 20px;
+  box-shadow: 0 10px 26px rgba(80, 110, 255, 0.15) !important;
+  border: 1px solid rgba(150, 170, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(70, 110, 255, 0.22) !important;
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(90deg, #5478ff, #3658e6);
+  border: none;
+  padding: 12px 18px;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(70, 110, 255, 0.25);
+  transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #3658e6, #5478ff);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(70, 110, 255, 0.35);
+}
+
+/* Input / Select styling */
+input, select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccd7ff;
+  outline: none;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+input:focus, select:focus {
+  border-color: #5478ff;
+  box-shadow: 0 0 6px rgba(70, 110, 255, 0.25);
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #243b80;
+}
+
+/* File input */
+input[type="file"] {
+  background: #f8faff;
+  border: 1px solid #cfd8ff;
+}
+
+/* Flash message */
+.alert-warning {
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+/* Center content */
+.container {
+  margin-top: 40px;
+}
+
+/* Pre-scrollable area for result text (optional use later) */
+.pre-scrollable {
+  max-height: 300px;
+  overflow: auto;
+  background: #fafcff;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #dfe7ff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
